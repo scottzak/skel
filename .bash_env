@@ -1,6 +1,6 @@
 # ~/.env: executed by bash for interactive sessions
 
-Set -o vi
+set -o vi
 set -o allexport
 
   PATH=${PATH}
