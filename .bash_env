@@ -1,0 +1,14 @@
+# ~/.env: executed by bash for interactive sessions
+
+Set -o vi
+set -o allexport
+
+  PATH=${PATH}
+  PROJECT=serverless-commonid
+  SLS_PROJECT_ROOT=~/$PROJECT/application
+  BEHAT_ROOT=~/$PROJECT/application/behat
+  BBOOT=$BEHAT_ROOT/features/bootstrap
+  PS1='\[\033[44;37m\]\u::$PROJECT\[\033[00m\] \[\033[01;33m\]\T\[\033[00m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
+
+set +o allexport
+
